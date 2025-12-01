@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic"; 
+import { connection } from 'next/server';
 import { ComponentPropsWithoutRef } from 'react';
 import { sleep } from '@/lib/utils';
 
@@ -9,6 +9,7 @@ export const GraphicBar = async ({
   props?: ComponentPropsWithoutRef<'svg'>;
   renderTime: number;
 }) => {
+  await connection();
   await sleep(renderTime);
 
   return (

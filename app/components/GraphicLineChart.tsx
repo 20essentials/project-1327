@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic"; 
+import { connection } from 'next/server';
 import { sleep } from '@/lib/utils';
 import { ComponentPropsWithoutRef } from 'react';
 
@@ -9,6 +9,7 @@ export const GraphicLineChart = async ({
   props?: ComponentPropsWithoutRef<'svg'>;
   renderTime: number;
 }) => {
+  await connection();
   await sleep(renderTime);
 
   return (
