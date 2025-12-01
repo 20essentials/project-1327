@@ -1,4 +1,4 @@
-[![Foto Preview](preview/project-1327.avif)](https://20essentials.github.io/project-1327)
+[![Foto Preview](preview/project-1327.avif)](https://project-1327.vercel.app/)
 - Graphics done with https://makegraph.app/editor?template=basic-line-chart
 - Skeleton done with https://skeletonreact.com/
 - SVG to JSX with https://react-svgr.com/playground/
