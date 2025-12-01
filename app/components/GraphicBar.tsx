@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic"; 
 import { ComponentPropsWithoutRef } from 'react';
 import { sleep } from '@/lib/utils';
 
